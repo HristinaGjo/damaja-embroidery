@@ -10,7 +10,6 @@ requestAnimationFrame(raf);
 // GSAP Setup
 gsap.registerPlugin(Flip, CustomEase, ScrollToPlugin);
 
-
 CustomEase.create(
     "hop",
     "M0,0 CO.028,0.528 0.129,0.74 0.27,0.852 0.415,0.967 0.499,1 1,1"
