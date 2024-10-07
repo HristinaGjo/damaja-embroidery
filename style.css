@@ -8,7 +8,7 @@ html,
 body{
     width: 100%;
     height: 100%;
-    font-family: "PP Neue Montreal";
+    font-family: "Helvetica";
 }
 
 img{
@@ -33,8 +33,8 @@ nav .nav-item {
 
 nav .nav-item p{
     text-transform: uppercase;
-    font-size: 13px;
-    font-weight: 500;
+    font-size: 12px;
+    font-weight: 600;
     padding: 1em 0.25em;
     cursor: pointer;
 }
@@ -138,6 +138,11 @@ nav .nav-item p{
     right: 2em;
 }
 
+.gallery.layout-1-gallery #img15 {
+    display: none;
+}
+
+
 .gallery.layout-2-gallery{
     padding-top: 0.5em;
     position: fixed;
@@ -197,3 +202,29 @@ nav .nav-item p{
     pointer-events: none;
 }
 
+.gallery.layout-1-gallery .gallery-text{
+    display: none;
+}
+
+.gallery.layout-2-gallery .gallery-text{
+    display: none;
+}
+
+
+.gallery-text{
+    position: absolute;
+    padding-left: 2em;
+    top: 10vw;
+}
+
+/*.gallery.layout-1-gallery .gallery-text.img #img15{
+    position: absolute;
+    top: 4em;
+    right: 4em;
+    width: 300px;
+    height: 400px;
+}*/
+
+/*                   <div class="img" id="img15">
+                    <img src="./assets/adidas.webp" alt="Image Description">
+                </div>*/
