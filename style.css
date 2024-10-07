@@ -50,9 +50,16 @@ nav .nav-item p{
 
 .img-previews img{
     width: 600px;
-    height: 700px;
+    /*height: 700px;*/
+    height: 800px;
     padding: 1em 0;
 }
+
+/*.img-previews :nth-child(4){
+    width: auto;
+    height: 700px;
+    padding: 1em 0;
+}*/
 
 .gallery-container{
     width: 100%;
@@ -72,6 +79,7 @@ nav .nav-item p{
     width: 100px;
     height: 125px;
 }
+
 
 .gallery.layout-1-gallery #img1,
 .gallery.layout-1-gallery #img2,
