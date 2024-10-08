@@ -357,8 +357,8 @@ a{
     }*/
 
     .home-img{
-        width: 100%;
-        height: auto;
+        width: 100vw;
+        height: 450px;
         margin-left: auto;
         padding-right: 1.5em;
         padding-bottom: 1.5em;
