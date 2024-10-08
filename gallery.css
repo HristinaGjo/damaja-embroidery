@@ -85,14 +85,16 @@ a{
         padding-left: 1.5em;
         padding-right: 1.5em;
         padding-bottom: 2.5em;
-        font-weight: 600;
+        font-weight: 400;
+        font-family: 'Courier New', Courier, monospace;
         gap: 2em;
     }
 
     .footer-mobile a{
         font-size: 14px;
         text-transform: lowercase;
-        font-weight: 600;
+        font-weight: 400;
+        font-family: 'Courier New', Courier, monospace;
     }
 
     .right-ctn{
@@ -198,7 +200,8 @@ a{
     }
     
     .main-links a {
-        font-size: 2.5em;
+        /*font-size: 2.5em;*/
+        font-size: 2em;
         text-decoration: none;
         color: black;
         margin: 0;
