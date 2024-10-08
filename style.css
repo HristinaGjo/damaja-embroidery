@@ -337,7 +337,7 @@ a{
     }
 
     .title p{
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-family: 'Courier New', Courier, monospace;
         font-weight: 200;
     }
 
@@ -355,6 +355,7 @@ a{
         align-items: start;
         gap:1em;
         padding-bottom: 2em;
+        font-family: 'Courier New', Courier, monospace;
     }
 
     /*.home-img{
@@ -430,8 +431,8 @@ a{
         width: 100%;
         top: 0;
         left: 100%;
-        background-color: #000;
-        color: #f2f2f2;
+        background-color: #f2f2f2;
+        color: black;
         display: flex;
         justify-content: start;
         padding: 0 2em;
@@ -458,8 +459,13 @@ a{
     .main-links a {
         font-size: 2.5em;
         text-decoration: none;
-        color: #f2f2f2;
+        color: black;
         margin: 0;
+    }
+
+    .main-links p{
+        opacity: 0.5;
+        font-family: 'Courier New', Courier, monospace;
     }
 
     .copy-rights{
@@ -470,18 +476,20 @@ a{
 
     .secondary-links a {
         font-size: 16px;
-        color: #f2f2f2;
+        color: black;
         font-weight: 200;
         opacity: 0.5;
         text-transform: lowercase;
+        font-family: 'Courier New', Courier, monospace;
     }
 
     .secondary-links p {
         font-size: 16px;
-        color: #f2f2f2;
+        color: black;
         font-weight: 200;
         opacity: 0.5;
         margin-top: 0.2em;
+        font-family: 'Courier New', Courier, monospace;
     }
 
     .links-menu{
@@ -493,7 +501,7 @@ a{
 
     .overlay.active {
         left: 0;
-        color: #f2f2f2;
+        color: black;
     }
 
 
