@@ -495,6 +495,131 @@ a{
         left: 0;
         color: #f2f2f2;
     }
+
+
+
+
+
+
+
+
+    .about-page-mobile{
+        display: flex;
+        flex-direction: column;
+        gap: 18vw;
+    }
+
+    .about-text{
+        width: 95%;
+        box-sizing: border-box;
+        padding:6em 1.5em 0em 1.5em;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .about-text p{
+        line-height: 140%;
+    }
+
+    /*.header{
+        display: flex;
+        justify-content:  center;    
+    }
+
+    h1{
+        font-size: 2.461rem;
+        margin: 0;
+        display: inline-block;
+        text-wrap: nowrap;
+    }*/
+
+    .mobile-content{
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: start;
+        box-sizing: border-box;
+        padding: 1.5em;
+        justify-content: space-between;
+    }
+
+    .clients{
+        font-family: 'Courier New', Courier, monospace;
+        font-style: italic;
+    }
+
+    .contact{
+        margin-left: 0;
+        padding-top: 1em;
+    }
+
+    .img{
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        width: 200px;
+        height: auto;
+    }
+    
+    .img img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .footer-mobile{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        padding-top: 4em;
+        box-sizing: border-box;
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+        padding-bottom: 2.5em;
+        font-weight: 600;
+        gap: 2em;
+    }
+
+    .footer-mobile a{
+        font-size: 14px;
+        text-transform: lowercase;
+        font-weight: 600;
+    }
+
+    .right-ctn{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        gap: 3em;
+    }
+
+    .location{
+        display: flex;
+        flex-direction: column;
+        gap: 0.2em;
+    }
+
+    .location :nth-child(2){
+        font-size: 14px;
+    }
+
+    .contact{
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    .email span{
+        font-size: 14px;
+    }
+
+    .links{
+        display: flex;
+        flex-direction: column;
+        gap: 0.2em;
+    }
     
 }
 
