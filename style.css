@@ -437,7 +437,11 @@ a{
     }
 
     .third-row-mobile .img3-2-3{
-        margin-left: 12vw;
+        /*margin-left: 12vw;*/
+        display: flex;
+        flex-direction: row;
+        margin-left: auto;
+        gap: 0.5em;
     }
 
     .fourth-row-mobile{
@@ -445,7 +449,7 @@ a{
     }
 
     .fourth-row-mobile .img4-2{
-        margin-left: 20vw;
+        margin-left: 22vw;
     }
 
     .mobile-nav {
