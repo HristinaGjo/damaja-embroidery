@@ -111,6 +111,7 @@ nav .nav-item span{
     position: absolute;
     width: 100px;
     height: 125px;
+    cursor: pointer;
 }
 
 
