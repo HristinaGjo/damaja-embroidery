@@ -298,9 +298,9 @@ nav .nav-item span{
     /*margin-top: 5vw;*/
     font-family: "Open Sans", sans-serif;
  
-    position: absolute;
-    width: 20vw;
-    right: 2em;
+    position: relative;
+    /*width: 20vw;*/
+    right: 11em;
     top: 65%;
     margin-left: auto;
 }
