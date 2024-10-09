@@ -395,7 +395,7 @@ a{
 
 
     .home-mobile{
-        height: 100vh;
+        /*height: 100vh;*/
         display: flex;
         flex-direction: column;
         padding: 6em 1.5em 1.5em 1.5em;
@@ -410,35 +410,25 @@ a{
     }
 
     .first-row-mobile{
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        width: 280px;
-        height: auto;
+        width: 30.87vw;
+        height:40.47vw
     }
 
     .second-row-mobile{
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        width: 280px;
-        height: auto;
+        width: 30.87vw;
+        height:40.47vw
     }
 
     .third-row-mobile{
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        width: 280px;
-        height: auto;
+        /*display: grid;
+        grid-template-columns: repeat(2,1fr);*/
+        width: 30.87vw;
+        height:40.47vw
     }
 
     .fourth-row-mobile{
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        width: 280px;
-        height: auto;
+        width: 30.87vw;
+        height:40.47vw
     }
 
     .first-row-mobile img,
@@ -452,23 +442,19 @@ a{
     }
 
     .first-row-mobile .img01 {
-        grid-column: 1;
         margin-left: 0vw;
     }
 
     .second-row-mobile .img02 {
-        grid-column: 2;
-        margin-left: 20vw;
+        margin-left: 45vw;
     }
 
     .third-row-mobile .img03 {
-        grid-column: 1;
         margin-left: 10vw;
     }
 
     .fourth-row-mobile .img04 {
-        grid-column: 2;
-        margin-left: 10vw;
+        margin-left: 57.5vw;
     }
 
 
