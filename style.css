@@ -437,11 +437,15 @@ a{
     }
 
     .third-row-mobile .img3-2-3{
-        margin-left: 18vw;
+        margin-left: 12vw;
     }
 
     .fourth-row-mobile{
         margin-left: 0vw;
+    }
+
+    .fourth-row-mobile .img4-2{
+        margin-left: 20vw;
     }
 
     .mobile-nav {
