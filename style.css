@@ -746,8 +746,8 @@ a{
     
     .workshops-text p,
     .workshops-ctn p{
-        font-family: 'Courier New', Courier, monospace;
-        font-weight: 400;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 200;
         font-size: 5vw;
     }
     
