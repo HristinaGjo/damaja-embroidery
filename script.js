@@ -137,3 +137,11 @@ window.addEventListener("load", () => {
     // Disable scroll on load if layout-1-gallery or layout-3-gallery is active
     toggleLenisScroll(!(activeLayout === "layout-1-gallery" || activeLayout === "layout-3-gallery"));
 });
+
+const images = document.querySelectorAll(".img");
+
+images.forEach((image) => {
+    image.addEventListener("click", () => {
+        switchLayout("layout-2-gallery");
+    });
+});
