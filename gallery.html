@@ -64,6 +64,10 @@
         </div>
     </div>
 
+    <div class="back-to-top" id="backToTop">
+        <p>&uarr; back to top</p>
+    </div>
+
     <div class="footer-mobile">
         <div class="left-ctn">
             <span>Damaja Studio</span>
@@ -139,10 +143,31 @@
 </div>
 
 <script src="menu.js"></script>
+<script>
+
+    const backToTopButton = document.getElementById('backToTop');
+
+    backToTopButton.onclick = function() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth' 
+        });
+    };
+</script>
+
 
 </body>
 </html>
 
 <!--
     <p>*(coming soon)</p>
+
+        // Show or hide the button based on scroll position
+    window.onscroll = function() {
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            backToTopButton.classList.add('show');
+        } else {
+            backToTopButton.classList.remove('show');
+        }
+    };
 -->

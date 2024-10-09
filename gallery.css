@@ -52,7 +52,7 @@ a{
     }
 
     .project-text span{
-        font-weight: 400;
+        font-weight: 200;
         font-size: 20px;
     }
 
@@ -86,7 +86,7 @@ a{
         padding-left: 1.5em;
         padding-right: 1.5em;
         padding-bottom: 2.5em;
-        font-weight: 400;
+        font-weight: 600;
         font-family: "Open Sans", sans-serif;
         gap: 2em;
     }
@@ -94,7 +94,7 @@ a{
     .footer-mobile a{
         font-size: 14px;
         text-transform: lowercase;
-        font-weight: 400;
+        font-weight: 600;
         font-family: "Open Sans", sans-serif;
     }
 
@@ -157,6 +157,7 @@ a{
         font-weight: 400;
         visibility:visible;
         font-family: "Open Sans", sans-serif;
+        visibility: hidden;
     }
 
     .menu-toggle {
@@ -255,6 +256,17 @@ a{
     .overlay.active {
         left: 0;
         color: black;
+    }
+
+    .back-to-top {
+        color:black; 
+        cursor: pointer; 
+        z-index: 1000; 
+        font-size: 16px; 
+        text-align:left;
+        padding-left: 1.5em;
+        display: block;
+        font-family: 'Open Sans', sans-serif;
     }
 
 }
