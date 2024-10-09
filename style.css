@@ -432,8 +432,12 @@ a{
         margin-left: 30vw;
     }
 
-    .third-row-mobile{
-       justify-content: end;
+    .third-row-mobile .img3-1{
+        margin-left: 0;
+    }
+
+    .third-row-mobile .img3-2-3{
+        margin-left: 22vw;
     }
 
     .fourth-row-mobile{
