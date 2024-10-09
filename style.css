@@ -420,6 +420,10 @@ a{
         font-family: "Open Sans", sans-serif;
     }
 
+    .title-mobile p{
+        font-weight: 200;
+    }
+
     /*.img-ctn-mobile{
         width: 100%;
         height: 100%;
