@@ -250,19 +250,23 @@ nav .nav-item span{
 }
 
 .text-container{
-    width: 70vw;
-    position: absolute;
+   /*width: 70vw;*/
+    /*position: absolute;
     padding-left: 2em;
-    top: 5vw;
+    top: 5vw;*/
     display: grid;
     grid-template-rows: repeat(3,1fr);
     gap: 1em;
 }
 
 .about-clients-ctn{
+    position: absolute;
+    padding-left: 2em;
+    top: 5vw;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 2em;
+    width: 70vw;
 }
 
 .gallery-text{
@@ -285,12 +289,20 @@ nav .nav-item span{
 
 .contact-text{
     grid-row: 3;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 2em;
     font-size: 14px;
-    font-weight: 400;
-    margin-top: 5vw;
+    font-weight: 600;
+    /*margin-top: 5vw;*/
     font-family: "Open Sans", sans-serif;
+ 
+    position: absolute;
+    width: 20vw;
+    right: 2em;
+    top: 65%;
+    margin-left: auto;
 }
 
 .links-about{
