@@ -28,8 +28,8 @@ a{
         align-items: center;
         width: 100%;
         box-sizing: border-box;
-        padding: 6em 1.5em 2.5em 1.5em;
-        gap: 5em;
+        padding: 4em 1.5em 2.5em 1.5em;
+        gap: 2em;
     }
 
     .project{
@@ -43,10 +43,11 @@ a{
     }
 
     .project-text{
+        height: 22vw;
         display: flex;
         flex-direction: column;
         padding-bottom: 1em;
-        justify-content: center;
+        justify-content: end;
         align-items: center;
     }
 
