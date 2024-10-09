@@ -459,8 +459,10 @@ a{
     .second-row-mobile img,
     .third-row-mobile img,
     .fourth-row-mobile img{
-        width: 20.87vw;
+        width: 20.99vw;
         height: 30.47vw;
+        object-fit: cover;
+        object-position: center;
     }
 
     .second-row-mobile{
