@@ -340,7 +340,7 @@ a{
         flex-direction: column;
         justify-content:end;
         gap: 0.5em;
-        padding-bottom: 4em;
+        padding-bottom: 3em;
     }
 
     .title p{
@@ -361,7 +361,7 @@ a{
         flex-direction: row;
         align-items: start;
         gap:1em;
-        padding-bottom: 2em;
+        padding-bottom: 1em;
         font-family: 'Courier New', Courier, monospace;
     }
 
@@ -377,7 +377,7 @@ a{
 
     .home-img{
         width: 100%;
-        height: auto;
+        height: 400px;
         object-fit: cover;
         object-position: center;
         /*padding-right: 1.5em;
