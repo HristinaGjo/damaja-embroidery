@@ -49,6 +49,7 @@ a{
         padding-bottom: 1em;
         justify-content: end;
         align-items: center;
+        line-height: 160%;
     }
 
     .project-text span{
