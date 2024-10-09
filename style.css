@@ -415,9 +415,13 @@ a{
         display: flex;
         flex-direction: column;
         padding: 4em 1.5em 1.5em 1.5em;
-        gap: 1.2em;
+        /*gap: 1.2em;*/
         width: 100%;
         font-family: "Open Sans", sans-serif;
+    }
+
+    .title-mobile{
+        padding-bottom: 1.5em;
     }
 
     .title-mobile p{
@@ -439,6 +443,16 @@ a{
         flex-direction: row;
         gap: 0.5em;
         width: 100%;
+    }
+
+    .first-row-mobile,
+    .second-row-mobile,
+    .third-row-mobile{
+        display: flex;
+        flex-direction: row;
+        gap: 0.5em;
+        width: 100%;
+        padding-bottom: 1em;
     }
 
     .first-row-mobile img,
