@@ -8,6 +8,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <!-- Preload Critical Images -->
+    <link rel="preload" href="./assets/adidas01.webp" as="image">
+    <link rel="preload" href="./assets/adidas02.webp" as="image">
+    <link rel="preload" href="./assets/adidas03.webp" as="image">
+
 </head>
 <body>
     <nav>
@@ -66,13 +72,13 @@
                 </div>
             </div>
             <div class="img" id="img1">
-                <img src="./assets/adidas01.webp" alt="">
+                <img src="./assets/adidas01.webp" alt="" loading="lazy">
             </div>
             <div class="img" id="img2">
-                <img src="./assets/adidas02.webp" alt="">
+                <img src="./assets/adidas02.webp" alt="" loading="lazy">
             </div>
             <div class="img" id="img3">
-                <img src="./assets/adidas03.webp" alt="">
+                <img src="./assets/adidas03.webp" alt="" loading="lazy">
             </div>
             <div class="img" id="img4">
                 <img src="./assets/flora04.webp" alt="">
@@ -235,6 +241,13 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12/dist/CustomEase.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
     <script src="https://unpkg.com/lenis@1.1.9/dist/lenis.min.js"></script>
+    <script>
+        document.querySelectorAll('img').forEach(img => {
+    img.addEventListener('load', () => {
+        img.classList.add('loaded');
+    });
+});
+    </script>
     <script src="menu.js"></script>
     <script src="script.js"></script>
 </body>
