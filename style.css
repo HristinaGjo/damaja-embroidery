@@ -38,6 +38,9 @@ img{
     background-color: #f7f7f7;
 }
 
+img.loaded {
+    opacity: 1;
+}
 
 nav{
     position: fixed;
