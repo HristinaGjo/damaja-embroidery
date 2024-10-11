@@ -10,7 +10,7 @@
     <div class="workshops-ctn">
         <p>Coming soon...</p>
         <div class="img-workshops">
-            <img src="./assets/workshops.webp" alt="">
+            <img src="./assets/workshops.webp" alt="" loading="lazy">
         </div>
         <div class="workshops-content">
             <div class="workshops-text">
@@ -70,6 +70,18 @@
             <p>&copy; 2024 All rights reserved</p>
         </div>
     </div>
+    <script>
+        document.querySelectorAll('img').forEach(img => {
+        // Check if image is already loaded
+            if (img.complete) {
+                img.classList.add('loaded');
+            } else {
+            img.addEventListener('load', () => {
+                img.classList.add('loaded');
+            });
+        }
+    });
+    </script>
     <script src="menu.js"></script>
 </body>
 </html>
