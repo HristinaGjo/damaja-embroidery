@@ -40,7 +40,7 @@
 
     </div>
     <div class="img">
-        <img src="./assets/stef.jpg">
+        <img src="./assets/stef.jpg" loading="lazy">
     </div>
 
     </div>
@@ -119,6 +119,18 @@
             </div>
         </div>
     </div>
+    <script>
+        document.querySelectorAll('img').forEach(img => {
+        // Check if image is already loaded
+            if (img.complete) {
+                img.classList.add('loaded');
+            } else {
+            img.addEventListener('load', () => {
+                img.classList.add('loaded');
+            });
+        }
+    });
+    </script>
     <script src="menu.js"></script>
     
 </body>
