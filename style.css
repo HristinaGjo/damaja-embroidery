@@ -296,7 +296,8 @@ nav .nav-item span{
     position: relative;
     /*width: 20vw;*/
     right: 11em;
-    top: 65%;
+    /*top: 65%;*/
+    top: 80%;
     margin-left: auto;
 }
 
