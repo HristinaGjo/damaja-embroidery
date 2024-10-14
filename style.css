@@ -456,62 +456,56 @@ a{
         visibility: hidden;
     }
 
+    .minimap{
+        display: none;
+    }
+
+    .gallery.layout-2-gallery {
+        display: none;
+    }
+
+    
+    .img-previews{
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        padding:0 1.5em;
+        opacity: 0;
+        background: #f2f2f2;
+    }
+    
+    
+    .img-previews img{
+        width: 380px;
+        height: 580px;
+        padding-bottom: 4em;
+        background: #f2f2f2;
+    }
+
+    .project-title{
+        display: flex;
+        flex-direction: column;
+        gap: 0.2em;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        padding-bottom: 1em;
+    }
+    
+    .project-title :nth-child(1) {
+        font-size: 20px;
+        font-family: 'Open Sans', sans-serif;
+    }
+    
+    .project-title :nth-child(2) {
+        font-family: 'Courier New', Courier, monospace;
+    }
+    
 
 
-
-
-    
-    /*.gallery.layout-1-gallery #img9,
-    .gallery.layout-1-gallery #img10{
-        top: 50%;
-    }
-    
-    .gallery.layout-1-gallery #img11,
-    .gallery.layout-1-gallery #img12,
-    .gallery.layout-1-gallery #img13,
-    .gallery.layout-1-gallery #img14 {
-        top: 75%;
-    }*/
-    
-    
-    /*.gallery.layout-1-gallery #img1,
-    .gallery.layout-1-gallery #img5,
-    .gallery.layout-1-gallery #img11 {
-        left: 2em;
-    } */
-    
-    /*.gallery.layout-1-gallery #img3,
-    .gallery.layout-1-gallery #img9 {
-        left: 45%;
-    } */
-    
-    /*.gallery.layout-1-gallery #img4,
-    .gallery.layout-1-gallery #img10,
-    .gallery.layout-1-gallery #img12 {
-        left: 65%;
-    } */
-    
-    /*.gallery.layout-1-gallery #img13 {
-        left: 75%;
-    }
-    
-    .gallery.layout-1-gallery #img6 {
-        left: 25%;
-    }
-    
-    .gallery.layout-1-gallery #img7 {
-        right: 15%;
-    }
-    
-    .gallery.layout-1-gallery #img8,
-    .gallery.layout-1-gallery #img14 {
-        right: 2em;
-    }
-    
-    .gallery.layout-1-gallery #img15,
-    .gallery.layout-2-gallery #img15  {
-        visibility: hidden;
-    } */
 
     /*.gallery-container,
     .minimap,
