@@ -63,6 +63,26 @@ nav .nav-item span{
     font-size: 12px;
 }
 
+.project-title{
+    display: flex;
+    flex-direction: column;
+    gap: 0.2em;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 600px;
+    padding-bottom: 1em;
+}
+
+.project-title :nth-child(1) {
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.project-title :nth-child(2) {
+    font-family: 'Courier New', Courier, monospace;
+}
+
 
 .img-previews{
     position: absolute;
@@ -78,14 +98,12 @@ nav .nav-item span{
     width: 600px;
     /*height: 700px;*/
     height: 800px;
-    padding: 1em 0;
+    /*padding: 1em 0;*/
+    /*padding: 2em 0;*/
+    padding-bottom: 4em;
+    background: #f2f2f2;
 }
 
-/*.img-previews :nth-child(4){
-    width: auto;
-    height: 700px;
-    padding: 1em 0;
-}*/
 
 .gallery-container{
     width: 100%;
@@ -413,8 +431,8 @@ a{
         padding: 4em 1.5em 1.5em 1.5em;
         /*gap: 1.2em;*/
         width: 100%;
-        /*font-family: "Open Sans", sans-serif;*/
-        font-family: 'Courier New', Courier, monospace;
+        font-family: "Open Sans", sans-serif;
+        /*font-family: 'Courier New', Courier, monospace;*/
     }
 
     .title-mobile{
@@ -740,9 +758,9 @@ a{
         font-size: 14px;
     }
 
-
     .email span{
         font-size: 14px;
+        margin-top: 0;
     }
 
     .links{

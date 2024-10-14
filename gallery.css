@@ -53,7 +53,7 @@ a{
     }
 
     .project-text span{
-        font-weight: 200;
+        font-weight: 400;
         font-size: 20px;
     }
 
@@ -137,6 +137,7 @@ a{
 
     .email span{
         font-size: 14px;
+        margin-top: 0;
     }
 
     .links{

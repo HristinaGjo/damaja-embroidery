@@ -138,6 +138,7 @@ window.addEventListener("load", () => {
     toggleLenisScroll(!(activeLayout === "layout-1-gallery" || activeLayout === "layout-3-gallery"));
 });
 
+
 const images = document.querySelectorAll(".img");
 
 images.forEach((image) => {
