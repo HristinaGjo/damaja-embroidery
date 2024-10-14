@@ -278,7 +278,7 @@ nav .nav-item span{
 
 .clients-text{
     width: 100%;
-    font-style: italic;
+   /* font-style: italic; */
     font-family:'Courier New', Courier, monospace;
 }
 
@@ -412,7 +412,8 @@ a{
         padding: 4em 1.5em 1.5em 1.5em;
         /*gap: 1.2em;*/
         width: 100%;
-        font-family: "Open Sans", sans-serif;
+        /*font-family: "Open Sans", sans-serif;*/
+        font-family: 'Courier New', Courier, monospace;
     }
 
     .title-mobile{
@@ -665,12 +666,15 @@ a{
 
     .clients{
         font-family: 'Courier New', Courier, monospace;
-        font-style: italic;
+        /*font-style: italic;*/
     }
 
     .contact{
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
         margin-left: 0;
-        padding-top: 1em;
+        padding-top: 0em;
     }
 
     .img{
@@ -698,7 +702,7 @@ a{
         padding-right: 1.5em;
         padding-bottom: 2.5em;
         font-weight: 600;
-        gap: 2em;
+        gap: 0em;
         /*font-family: 'Courier New', Courier, monospace;*/
         font-family: "Open Sans", sans-serif;
     }
@@ -708,6 +712,14 @@ a{
         text-transform: lowercase;
         font-weight: 600;
         font-family: "Open Sans", sans-serif;
+    }
+
+    .left-ctn{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        gap: 2em;
+        font-size: 14px;
     }
 
     .right-ctn{
@@ -727,11 +739,6 @@ a{
         font-size: 14px;
     }
 
-    .contact{
-        display: flex;
-        flex-direction: column;
-        gap: 2em;
-    }
 
     .email span{
         font-size: 14px;

@@ -57,6 +57,11 @@ a{
         font-size: 20px;
     }
 
+    .project-text :nth-child(2){
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 16px;
+    }
+
     .img-ctn{
         display: flex;
         flex-direction: column;
@@ -99,11 +104,19 @@ a{
         font-family: "Open Sans", sans-serif;
     }
 
+    .left-ctn{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        gap: 2em;
+        font-size: 14px;
+    }
+
     .right-ctn{
         display: flex;
         flex-direction: column;
         text-align: left;
-        gap: 3em;
+        gap: 2em;
     }
 
     .location{
