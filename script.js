@@ -138,10 +138,10 @@ window.addEventListener("load", () => {
 });
 
 
-const images = document.querySelectorAll(".img");
+/* const images = document.querySelectorAll(".img");
 
 images.forEach((image) => {
     image.addEventListener("click", () => {
         switchLayout("layout-2-gallery");
     });
-});
+}); */

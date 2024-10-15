@@ -292,7 +292,7 @@ nav .nav-item p{
     flex-direction: column;
     width: 100%;
     font-size: 14px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Tinos", serif;
 }
 
 .gallery-text{
@@ -313,9 +313,10 @@ nav .nav-item p{
     margin: 0;
     width: 100%;
     /*font-family:'Courier New', Courier, monospace;*/
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Tinos", serif;
     text-transform: uppercase;
-    font-weight: 200;
+    font-weight: 400;
+    font-style: italic;
 }
 
 /*.clients-text :nth-child(2),
