@@ -44,7 +44,7 @@ nav .right-ctn{
     display: flex;
     flex-direction: row;
     justify-content: end;
-    gap: 2em;
+    gap: 1.6em;
 }
 
 
@@ -121,7 +121,6 @@ nav .nav-item span{
     height: 255px;*/
     cursor: pointer;
 }
-
 
 .gallery.layout-1-gallery #img1,
 .gallery.layout-1-gallery #img2,
@@ -240,7 +239,7 @@ nav .nav-item span{
     transform: translateX(-50%);
     width: 140px;
     height: 90px;
-    border: 1px solid black;
+    border: 0.5px solid black;
     border-radius: 2px;
     z-index: 2;
     visibility: hidden;
@@ -256,33 +255,11 @@ nav .nav-item span{
 
 .gallery.layout-3-gallery .img{
     position: absolute;
-    top: 4em;
+    top: 0em;
+    /*top: 4em;*/
     right: 2em;
     width: 300px;
     height: 400px;
-}
-
-
-
-.lenis.lenis-smooth{
-    scroll-behavior: auto !important;
-}
-
-.lenis.lenis-smooth [data-lenis-prevent]{
-    overscroll-behavior: contain;
-}
-
-.lenis.lenis-stopped{
-    overflow: hidden;
-}
-
-.lenis.lenis.lenis-smooth iframe{
-    pointer-events: none;
-}
-
-.gallery.layout-1-gallery .text-container,
-.gallery.layout-2-gallery .text-container{
-    display: none;
 }
 
 .text-container{
@@ -294,9 +271,9 @@ nav .nav-item span{
 .about-clients-ctn{
     position: absolute;
     padding-left: 2em;
-    top: 5vw;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
+    top: 0em;
+    /*display: grid;
+    grid-template-columns: repeat(2,1fr); */
     gap: 2em;
     width: 70vw;
 }
@@ -314,10 +291,40 @@ nav .nav-item span{
 }
 
 .clients-text{
+    font-size: 3.1em;
+    line-height: 100%;
+    margin: 0;
     width: 100%;
-   /* font-style: italic; */
+    font-style: italic; 
     font-family:'Courier New', Courier, monospace;
+    text-transform: uppercase;
+    font-weight: 200;
 }
+
+/*.clients-text :nth-child(2),
+.clients-text :nth-child(4),
+.clients-text :nth-child(6),
+.clients-text :nth-child(8),
+.clients-text :nth-child(10){
+    margin-left: 4vw;
+}*/
+
+.clients-text :nth-child(2),
+.clients-text :nth-child(4),
+.clients-text :nth-child(6){
+    margin-left: 8vw;
+}
+
+.clients-text :nth-child(3),
+.clients-text :nth-child(7),
+.clients-text :nth-child(9){
+    margin-left: 2.5vw;
+}
+
+/*.clients-text :nth-child(6){
+    margin-left: 12vw;
+}*/
+
 
 .contact-text{
     grid-row: 3;
@@ -326,19 +333,25 @@ nav .nav-item span{
     justify-content: start;
     gap: 2em;
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 400;
     font-family: "Open Sans", sans-serif;
  
     position: relative;
     right: 11em;
-    top: 80%;
+    top: 40%;
     margin-left: auto;
 }
 
 .links-about{
     display: flex;
     flex-direction: column;
+    visibility: hidden;
 }
+
+.studio{
+    visibility: hidden;
+}
+
 
 a{
     text-decoration: none;
@@ -389,6 +402,28 @@ a{
 .home-mobile,
 .mobile-nav,
 .overlay{
+    display: none;
+}
+
+
+.lenis.lenis-smooth{
+    scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent]{
+    overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped{
+    overflow: hidden;
+}
+
+.lenis.lenis.lenis-smooth iframe{
+    pointer-events: none;
+}
+
+.gallery.layout-1-gallery .text-container,
+.gallery.layout-2-gallery .text-container{
     display: none;
 }
 
