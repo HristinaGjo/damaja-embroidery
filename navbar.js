@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // Navigate to the studio page after the overlay appears
             setTimeout(() => {
                 window.location.href = "studio.html";
-            }, 500); // Adjust the timeout to match your overlay transition duration
+            }, 200); // Adjust the timeout to match your overlay transition duration
         } else {
             // If navigating from work or clients, hide them before navigating to studio
             workClients.forEach(item => {
@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // Add a delay to let the transition play out before navigating
             setTimeout(() => {
                 window.location.href = "studio.html";
-            }, 500); // Adjust delay to match your transition time
+            }, 200); // Adjust delay to match your transition time
         }
     });
 });
