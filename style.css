@@ -8,7 +8,7 @@ html,
 body{
     width: 100%;
     height: 100%;
-    font-family: "Helvetica";
+    font-family: "Open Sans", sans-serif;
     background: #f2f2f2;
 }
 
@@ -45,21 +45,46 @@ nav .right-ctn{
     flex-direction: row;
     justify-content: end;
     gap: 1.6em;
+    /*gap: 3.6em;*/
 }
 
-
-nav .nav-item p{
+/*nav .nav-item p{
     text-transform: lowercase;
     font-size: 14px;
     font-weight: 400;
     padding: 1em 0.25em;
     cursor: pointer;
     font-family: "Open Sans", sans-serif;
+}*/
+
+nav .nav-item p{
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 1em 0.25em;
+    cursor: pointer;
+    /*font-family: "Open Sans", sans-serif;*/
+    font-family: 'Courier New', Courier, monospace;
 }
 
 nav .nav-item span{
     font-size: 12px;
 }
+
+.nav-item {
+    display: inline-block; /* To align them horizontally */
+    opacity: 1; /* Start fully visible */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Transition for opacity and transformation */
+}
+
+/* Hidden state */
+.nav-item.hidden {
+    opacity: 0; /* Fade out */
+    transform: translateY(-10px); /* Move up slightly */
+    pointer-events: none; /* Prevent interaction */
+    transition: opacity 0.5s ease 0.1s, transform 0.5s ease; /* Adding delay to hidden transition */
+}
+
 
 .project-title{
     display: flex;
@@ -272,8 +297,8 @@ nav .nav-item span{
     position: absolute;
     padding-left: 2em;
     top: 0em;
-    /*display: grid;
-    grid-template-columns: repeat(2,1fr); */
+    display: grid;
+    grid-template-columns: repeat(2,1fr); 
     gap: 2em;
     width: 70vw;
 }
@@ -334,11 +359,13 @@ nav .nav-item span{
     gap: 2em;
     font-size: 14px;
     font-weight: 400;
-    font-family: "Open Sans", sans-serif;
+    /*font-family: "Open Sans", sans-serif;*/
+    font-family: 'Courier New', Courier, monospace;
  
-    position: relative;
-    right: 11em;
-    top: 40%;
+    /*position: relative;*/
+    position: absolute;
+    right: 9.5em;
+    top: 65%;
     margin-left: auto;
 }
 
