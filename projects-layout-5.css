@@ -65,22 +65,21 @@ nav .nav-item p{
 }
 
 #img01 {
-    width: 650px;
-    height: 800px;
-    margin-left: 30%;
+    width: 600px;
+    height: 600px;
 }
 
 #img02 {
-    width: 800px;
-    height: 1000px;
+    width: 600px;
+    height: 600px;
+    margin-left: 30%;
+
 }
 
 #img03 {
     width: 600px;
-    height: 600px;
-    margin-left: 33%;
+    height: 800px;
 }
-
 
 .img img{
     width: 100%;

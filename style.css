@@ -54,7 +54,7 @@ nav .nav-item p{
 /* Updated Overlay text style */
 .overlay-text {
     position: fixed; 
-    top: 40%; 
+    top: 37%; 
     left: 50%; 
     transform: translate(-50%, -50%);
     color: black; 
