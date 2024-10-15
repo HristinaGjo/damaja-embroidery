@@ -111,10 +111,9 @@ function handleScroll() {
     const windowHeight = window.innerHeight;
 
     const scrollFraction = scrollY / (imgPreviewsHeight - windowHeight);
-    const galleryTranslateY = -scrollFraction * (galleryHeight - windowHeight) * 1.525;
-    const minimapTranslateY = scrollFraction * (windowHeight - minimap.offsetHeight) * 0.125;
+    const galleryTranslateY = -scrollFraction * (galleryHeight - windowHeight) * -1.60;
+    const minimapTranslateY = scrollFraction * (windowHeight - minimap.offsetHeight) * 0.425;
     // const minimapTranslateY = scrollFraction * (windowHeight - minimap.offsetHeight) * 0.425;
-
 
 
     gsap.to(gallery, {
@@ -139,10 +138,10 @@ window.addEventListener("load", () => {
 });
 
 
-const images = document.querySelectorAll(".img");
+/* const images = document.querySelectorAll(".img");
 
 images.forEach((image) => {
     image.addEventListener("click", () => {
         switchLayout("layout-2-gallery");
     });
-});
+}); */
