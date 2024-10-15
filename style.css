@@ -167,7 +167,7 @@ nav .nav-item p{
 
 .gallery.layout-1-gallery .img{
     position: absolute;
-    width: 180px;
+    width: 200px;
     height: 250px;
     /*width: 230px;
     height: 255px;
@@ -188,7 +188,8 @@ nav .nav-item p{
 }
 
 .gallery.layout-1-gallery #img2{
-    left: 70%;
+    /* left: 69%; */
+    left: 17%;
 }
 
 .gallery.layout-1-gallery #img3{
@@ -207,7 +208,8 @@ nav .nav-item p{
 }
 
 .gallery.layout-1-gallery #img5{
-    left: 18%;
+    /*left: 18%; */
+    left: 69%;
 }
 
 .gallery.layout-1-gallery #img6{
