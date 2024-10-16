@@ -19,7 +19,8 @@ menuToggle.addEventListener('click', () => {
         overlay.classList.add('active');
         menuText.style.display = 'none';    // Hide "menu" text
         closeText.style.display = 'block';   // Show "close" text
-        logo.querySelector('a').style.color = '#f2f2f2';
+        logo.querySelector('a').style.color = '#000';
+        /*logo.querySelector('a').style.color = '#f2f2f2';*/
     }
 });
 

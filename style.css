@@ -431,11 +431,184 @@ a{
     display: none;
 }
 
-
-.home-mobile,
+/*.home-mobile,
 .mobile-nav,
 .overlay{
     display: none;
+} */
+
+
+.home-mobile{
+    display: none;
+}
+
+
+.mobile-nav {
+    position: fixed;
+    color:black;
+    padding: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    right: 0em;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 2;
+}
+
+#menuText{
+    color: transparent;
+}
+
+
+#menuText, #closeText{
+    font-family: "Tinos", serif;
+    font-size: 12px;
+}
+
+#logo a{
+    visibility: visible;
+    font-family: "Tinos", serif;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    display: flex;
+    justify-content: start;
+    color: red;
+}
+
+
+.menu-toggle {
+    display: block;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#menuToggle {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12px;
+
+}
+
+.menu-toggle a{
+    color: black;
+
+}
+
+/*.overlay {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 100%;
+    background-color: #f2f2f2;
+    color: black;
+    display: flex;
+    justify-content: start;
+    padding: 0 1.5em;
+    align-items: center;
+    transition: left 0.3s ease-in-out;
+    z-index: 999;
+} */
+
+.overlay {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: -100%; 
+    left: 0;    
+    background-color: #f2f2f2;
+    color: black;
+    display: flex;
+    justify-content: start;
+    padding: 0 1.5em;
+    align-items: center;
+    transition: top 0.5s ease-in-out; 
+    z-index: 999;
+} 
+
+.nav-content {
+    display: flex;
+    flex-direction: column;
+    gap: 6em;
+    text-align: left;
+}
+
+.main-links,
+.secondary-links {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+}
+
+.main-links a {
+    font-size: 2em;
+    text-decoration: none;
+    color: black;
+    margin: 0;
+    font-family: "Tinos", serif;
+    line-height: 1.2;
+}
+
+.main-links p{
+    opacity: 0.5;
+}
+
+.copy-rights{
+    position: absolute;
+    bottom: 2em;
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.secondary-links a {
+    font-size: 16px;
+    color: black;
+    font-weight: 200;
+    opacity: 0.5;
+    text-transform: lowercase;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.secondary-links p {
+    font-size: 16px;
+    color: black;
+    font-weight: 200;
+    opacity: 0.5;
+    margin-top: 0.2em;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.links-menu{
+    padding-top: 1.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.1em;
+}
+
+/*.overlay.active {
+    left: 0;
+    color: black;
+} */
+
+.overlay.active {
+    top: 0; 
+    color: black;
 }
 
 
@@ -594,7 +767,7 @@ a{
     }
 
     .mobile-nav {
-        color: #333;
+        color:black;
         padding: 1.5em;
         display: flex;
         flex-direction: row;
@@ -602,8 +775,13 @@ a{
         align-items: center;
         position: fixed;
         width: 100vw;
+        right: 0em;
         top: 0;
         z-index: 1000;
+    }
+
+    #menuText{
+        color: black;
     }
 
     #menuText, #closeText{
@@ -632,11 +810,11 @@ a{
     }
 
     .menu-toggle a{
-        color: #333;
+        color: black;
 
     }
 
-    /*.overlay {
+    .overlay {
         position: fixed;
         height: 100%;
         width: 100%;
@@ -650,23 +828,23 @@ a{
         align-items: center;
         transition: left 0.3s ease-in-out;
         z-index: 999;
-    } */
+    } 
 
-    .overlay {
+    /*.overlay {
         position: fixed;
         height: 100%;
         width: 100%;
-        top: -100%;  /* Start above the viewport */
-        left: 0;     /* Align with the left edge */
+        top: -100%; 
+        left: 0;    
         background-color: #f2f2f2;
         color: black;
         display: flex;
         justify-content: start;
         padding: 0 1.5em;
         align-items: center;
-        transition: top 0.8s ease-in-out;  /* Transition from top */
+        transition: top 0.8s ease-in-out; 
         z-index: 999;
-    }
+    } */
 
     .nav-content {
         display: flex;
@@ -728,15 +906,15 @@ a{
         gap: 0.1em;
     }
 
-    /*.overlay.active {
+    .overlay.active {
         left: 0;
         color: black;
-    } */
-
-    .overlay.active {
-        top: 0;  /* Move to the top of the viewport when active */
-        color: black;
     }
+
+    /*.overlay.active {
+        top: 0; 
+        color: black;
+    }*/
 
 
 
