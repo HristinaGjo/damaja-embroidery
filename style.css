@@ -409,12 +409,6 @@ a{
     font-family: "Open Sans", sans-serif;
 }
 
-.home-mobile,
-.mobile-nav,
-.overlay{
-    display: none;
-}
-
 
 .lenis.lenis-smooth{
     scroll-behavior: auto !important;
@@ -437,9 +431,13 @@ a{
     display: none;
 }
 
-.home-mobile{
+
+.home-mobile,
+.mobile-nav,
+.overlay{
     display: none;
 }
+
 
 
 @media (max-width:768px) {
