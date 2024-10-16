@@ -14,9 +14,7 @@ menuToggle.addEventListener('click', () => {
         closeText.style.display = 'none';   // Hide "close" text
         logo.querySelector('a').style.color = '#000';
     } else {
-        setTimeout(() => {
-            overlay.classList.add('active');
-        }, 20);
+
         // Open the menu
         overlay.classList.add('active');
         menuText.style.display = 'none';    // Hide "menu" text
@@ -25,4 +23,11 @@ menuToggle.addEventListener('click', () => {
     }
 });
 
+
+
+/* 
+        setTimeout(() => {
+            overlay.classList.add('active');
+        }, 20);
+*/
 

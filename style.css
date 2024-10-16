@@ -664,7 +664,7 @@ a{
         justify-content: start;
         padding: 0 1.5em;
         align-items: center;
-        transition: top 0.5s ease-in-out;  /* Transition from top */
+        transition: top 0.8s ease-in-out;  /* Transition from top */
         z-index: 999;
     }
 
