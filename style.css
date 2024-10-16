@@ -449,11 +449,10 @@ a{
     padding: 2em;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-    right: 0em;
+    justify-content: end;
+    width: 10vw;
+    right: 0.5em;
     top: 0;
-    left: 0;
     z-index: 1000;
 }
 
@@ -480,6 +479,10 @@ nav{
 }
 
 #logo a{
+    visibility: hidden;
+}
+
+/*#logo a{
     visibility: visible;
     font-family: "Tinos", serif;
     text-transform: uppercase;
@@ -488,7 +491,7 @@ nav{
     display: flex;
     justify-content: start;
     color: red;
-}
+} */
 
 
 .menu-toggle {
@@ -557,7 +560,7 @@ nav{
 }
 
 .main-links a {
-    font-size: 2em;
+    font-size: 3em;
     text-decoration: none;
     color: black;
     margin: 0;
