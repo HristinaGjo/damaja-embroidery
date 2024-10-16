@@ -293,7 +293,7 @@ nav .nav-item p{
 
     .copy-rights{
         position: absolute;
-        bottom: 8em;
+        bottom: 4em;
         font-size: 14px;
         font-family: "Open Sans", sans-serif;
     }
@@ -327,5 +327,5 @@ nav .nav-item p{
         left: 0;
         color: black;
     }
-    
+
 }
