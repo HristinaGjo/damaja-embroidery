@@ -129,6 +129,7 @@ a{
     }
 
     .mobile-content{
+        position: relative;
         display: grid;
         grid-template-rows: repeat(2,1fr);
         gap: 4em;
