@@ -189,7 +189,8 @@ a{
         width: 100%;
         padding-left: 1.5em;
         padding-right: 1.5em;
-        position: absolute;
+        /*position: absolute;*/
+        position: relative;
         padding-bottom: 4em;
         font-size: 14px;
         font-weight: 600;
