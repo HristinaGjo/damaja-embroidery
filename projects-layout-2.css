@@ -146,7 +146,7 @@ nav .nav-item p{
         flex-direction: column;
         padding:6em 1.5em 6em 1.5em;
         gap: 2em;
-        width: 100%;
+        width: 100vw;
     }
     
     .first-row,
@@ -190,8 +190,9 @@ nav .nav-item p{
         display: grid;
         grid-template-columns: repeat(2,1fr);
         width: 100%;
+        padding-left: 1.5em;
+        padding-right: 1.5em;
         position: absolute;
-        left: 2em;
         padding-bottom: 4em;
         font-size: 14px;
         font-weight: 600;
@@ -335,7 +336,6 @@ nav .nav-item p{
         color: black;
     }
 
-
     .footer{
         display: none;
     }
@@ -344,8 +344,9 @@ nav .nav-item p{
         display: grid;
         grid-template-columns: repeat(2,1fr);
         width: 100%;
+        padding-left: 1.5em;
+        padding-right: 1.5em;
         position: absolute;
-        left: 2em;
         padding-bottom: 4em;
         font-size: 14px;
         font-weight: 600;
