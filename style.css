@@ -486,26 +486,26 @@ a{
 
     .gallery.layout-1-gallery #img2{
         top: 0%;
-        left: 40%;
+        left: 35%;
     }
 
     .gallery.layout-1-gallery #img3{
-        top: 25%;
+        top: 30%;
         right: 0em;
     }
 
     .gallery.layout-1-gallery #img4 {
-        top: 50%;
-        left: 40%;
+        top: 60%;
+        left: 35%;
     }
 
     .gallery.layout-1-gallery #img5 {
-        top: 75%;
+        top: 90%;
         left: 0%;
     }
 
     .gallery.layout-1-gallery #img6 {
-        top: 75%;
+        top: 90%;
         right: 0em;
     }
 
@@ -557,8 +557,6 @@ a{
         font-family: 'Courier New', Courier, monospace;
     }
     
-
-
 
     /*.gallery-container,
     .minimap,
