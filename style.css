@@ -681,23 +681,9 @@ a{
         display: none;
     }
 
-    .img-previews{
-        /*position: absolute;
-        top: 15%;
-        left: 50%;*/
-        transform: translateX(-50%);
-        width: 100%;
-        box-sizing: border-box;
-        padding:0 1.5em 2.5em 1.5em;
-        opacity: 0;
-        background: #f2f2f2;
-    }
-
+    .img-previews,
     .img-previews img{
-        width: 380px;
-        height: 580px;
-        padding-bottom: 4em;
-        background: #f2f2f2;
+        display: none;
     }
 
     .project-title{
