@@ -380,19 +380,32 @@ a{
     }
 
     .mobile-nav {
-        color: #333;
-        padding: 1.5em;
+        color:black;
+        padding-top: 1.5em;
+        padding-left: 1.5em;
+        padding-right: 1.5em;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
         position: fixed;
         width: 100vw;
+        right: 0em;
         top: 0;
         z-index: 1000;
     }
 
+    #menuText{
+        color: black;
+    }
+
+    #menuText, #closeText{
+        font-family: "Tinos", serif;
+        font-size: 12px;
+    }
+
     #logo a{
-        font-size: 14px;
+        font-size: 12px;
         text-transform: uppercase;
         font-weight: 600;
         font-family: "Tinos", serif;
@@ -412,7 +425,7 @@ a{
     }
 
     .menu-toggle a{
-        color: #333;
+        color: black;
 
     }
 
@@ -420,25 +433,23 @@ a{
         position: fixed;
         height: 100%;
         width: 100%;
-        top: 0;
-        left: 100%;
+        top: -100%; 
+        left: 0;    
         background-color: #f2f2f2;
         color: black;
         display: flex;
         justify-content: start;
         padding: 0 1.5em;
         align-items: center;
-        transition: left 0.3s ease-in-out;
+        transition: top 0.5s ease-in-out; 
         z-index: 999;
-    }
+    } 
 
     .nav-content {
         display: flex;
         flex-direction: column;
         gap: 6em;
         text-align: left;
-        /*height: 100%;*/
-       /* justify-content: center; */
     }
 
     .main-links,
@@ -462,14 +473,6 @@ a{
         opacity: 0.5;
     }
 
-    .copy-rights{
-        position: absolute;
-        /*bottom: 4em;*/
-        bottom: 2em;
-        font-size: 14px;
-        font-family: "Open Sans", sans-serif;
-    }
-
     .secondary-links a {
         font-size: 16px;
         color: black;
@@ -488,6 +491,21 @@ a{
         font-family: 'Open Sans', sans-serif;
     }
 
+    .credits,
+    .copy-rights{
+        display: none;
+    }
+
+    .credits-mobile{
+        display: block;
+        position: absolute;
+        bottom: 2em;
+        font-size: 12px;
+        left: 2em;
+        font-family: "Open Sans", sans-serif;
+        font-style: italic;
+    }
+
     .links-menu{
         padding-top: 1.5em;
         display: flex;
@@ -496,7 +514,7 @@ a{
     }
 
     .overlay.active {
-        left: 0;
+        top: 0; 
         color: black;
     }
 
