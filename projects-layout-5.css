@@ -115,6 +115,167 @@ nav .nav-item p{
     display: none;
 }
 
+.credits-mobile{
+    display: none;
+}
+
+
+/* Menu Desktop & Mobile */
+.mobile-nav {
+    position: fixed;
+    color:black;
+    padding: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    width: 10vw;
+    right: 0.5em;
+    top: 0;
+    z-index: 1000;
+}
+
+
+#menuText{
+    color: transparent;
+}
+
+
+#menuText, #closeText{
+    font-family: "Tinos", serif;
+    font-size: 12px;
+}
+
+#logo a{
+    visibility: hidden;
+}
+
+
+.menu-toggle {
+    display: block;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#menuToggle {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12px;
+
+}
+
+.menu-toggle a{
+    color: black;
+
+}
+
+.overlay {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: -100%; 
+    left: 0;    
+    background-color: #f2f2f2;
+    color: black;
+    display: flex;
+    justify-content: start;
+    padding: 0 1.5em;
+    align-items: center;
+    transition: top 0.5s ease-in-out; 
+    z-index: 999;
+} 
+
+.nav-content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 6em;
+    text-align: left;
+    height: 100%;
+    padding-top: 2em;
+}
+
+.logo-desktop{
+    text-transform: uppercase;
+    font-family: "Tinos", serif;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.main-links,
+.secondary-links {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+}
+
+.main-links a {
+    font-size: 2.5em;
+    text-decoration: none;
+    color: black;
+    margin: 0;
+    font-family: "Tinos", serif;
+    line-height: 1.2;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+.main-links p{
+    opacity: 0.5;
+}
+
+
+.secondary-links a {
+    font-size: 16px;
+    color: black;
+    font-weight: 200;
+    opacity: 0.5;
+    text-transform: lowercase;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.secondary-links p {
+    font-size: 16px;
+    color: black;
+    font-weight: 200;
+    opacity: 0.5;
+    margin-top: 0.2em;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.links-menu{
+    padding-top: 1.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.1em;
+}
+
+.credits-mobile{
+    display: none;
+}
+
+.copy-rights{
+    position: absolute;
+    bottom: 2em;
+    font-size: 12px;
+    right: 2em;
+    font-family: "Open Sans", sans-serif;
+}
+
+.credits{
+    position: absolute;
+    bottom: 2em;
+    font-size: 12px;
+    left: 2em;
+    font-family: "Open Sans", sans-serif;
+    font-style: italic;
+}
+
+.overlay.active {
+    top: 0; 
+    color: black;
+}
 
 @media (max-width:768px) {
 
@@ -200,19 +361,32 @@ nav .nav-item p{
     }
 
     .mobile-nav {
-        color: #333;
-        padding: 1.5em;
+        color:black;
+        padding-top: 1.5em;
+        padding-left: 1.5em;
+        padding-right: 1.5em;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
         position: fixed;
         width: 100vw;
+        right: 0em;
         top: 0;
         z-index: 1000;
     }
 
+    #menuText{
+        color: black;
+    }
+
+    #menuText, #closeText{
+        font-family: "Tinos", serif;
+        font-size: 12px;
+    }
+
     #logo a{
-        font-size: 14px;
+        font-size: 12px;
         text-transform: uppercase;
         font-weight: 600;
         font-family: "Tinos", serif;
@@ -232,7 +406,7 @@ nav .nav-item p{
     }
 
     .menu-toggle a{
-        color: #333;
+        color: black;
 
     }
 
@@ -240,17 +414,17 @@ nav .nav-item p{
         position: fixed;
         height: 100%;
         width: 100%;
-        top: 0;
-        left: 100%;
+        top: -100%; 
+        left: 0;    
         background-color: #f2f2f2;
         color: black;
         display: flex;
         justify-content: start;
         padding: 0 1.5em;
         align-items: center;
-        transition: left 0.3s ease-in-out;
+        transition: top 0.5s ease-in-out; 
         z-index: 999;
-    }
+    } 
 
     .nav-content {
         display: flex;
@@ -280,13 +454,6 @@ nav .nav-item p{
         opacity: 0.5;
     }
 
-    .copy-rights{
-        position: absolute;
-        bottom: 2em;
-        font-size: 14px;
-        font-family: "Open Sans", sans-serif;
-    }
-
     .secondary-links a {
         font-size: 16px;
         color: black;
@@ -305,6 +472,21 @@ nav .nav-item p{
         font-family: 'Open Sans', sans-serif;
     }
 
+    .credits,
+    .copy-rights{
+        display: none;
+    }
+
+    .credits-mobile{
+        display: block;
+        position: absolute;
+        bottom: 2em;
+        font-size: 12px;
+        left: 2em;
+        font-family: "Open Sans", sans-serif;
+        font-style: italic;
+    }
+
     .links-menu{
         padding-top: 1.5em;
         display: flex;
@@ -313,7 +495,7 @@ nav .nav-item p{
     }
 
     .overlay.active {
-        left: 0;
+        top: 0; 
         color: black;
     }
 

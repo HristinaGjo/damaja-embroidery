@@ -131,8 +131,6 @@ nav .nav-item p{
     transform: translateX(-50%) translateY(0);
 }
 
-
-
 .img-previews{
     position: absolute;
     top: 25%;
@@ -306,7 +304,7 @@ nav .nav-item p{
     gap: 5em;
     position: relative;
     padding-top: 0em;
-    left: 12%;
+    left: 12.5%;
     width: 20%;
 }
 
@@ -422,7 +420,6 @@ a{
 .gallery.layout-2-gallery .text-container{
     display: none;
 }
-
 
 .home-mobile{
     display: none;
@@ -768,21 +765,6 @@ a{
 
     }
 
-    /*.overlay {
-        position: fixed;
-        width: 100%;
-        top: 0;
-        left: 100%;
-        background-color: #f2f2f2;
-        color: black;
-        display: flex;
-        justify-content: start;
-        padding: 0 1.5em;
-        align-items: center;
-        transition: left 0.3s ease-in-out;
-        z-index: 999;
-    } */
-
     .overlay {
         position: fixed;
         height: 100%;
@@ -827,13 +809,6 @@ a{
         opacity: 0.5;
     }
 
-    /*.copy-rights{
-        position: absolute;
-        bottom: 2em;
-        font-size: 14px;
-        font-family: "Open Sans", sans-serif;
-    } */
-
     .secondary-links a {
         font-size: 16px;
         color: black;
@@ -874,15 +849,12 @@ a{
         gap: 0.1em;
     }
 
-    /*.overlay.active {
-        left: 0;
-        color: black;
-    }*/
-
     .overlay.active {
         top: 0; 
         color: black;
     }
+
+    
 
     .footer{
         display: none;
@@ -1073,6 +1045,33 @@ a{
 
 }
 
+
+    /*.copy-rights{
+        position: absolute;
+        bottom: 2em;
+        font-size: 14px;
+        font-family: "Open Sans", sans-serif;
+    } */
+
+    /*.overlay {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 100%;
+        background-color: #f2f2f2;
+        color: black;
+        display: flex;
+        justify-content: start;
+        padding: 0 1.5em;
+        align-items: center;
+        transition: left 0.3s ease-in-out;
+        z-index: 999;
+    } */
+
+        /*.overlay.active {
+        left: 0;
+        color: black;
+    }*/
 
 
 /*.copy-rights{
