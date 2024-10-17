@@ -559,6 +559,10 @@ a{
     gap: 0.1em;
 }
 
+.credits-mobile{
+    display: none;
+}
+
 .copy-rights{
     position: absolute;
     bottom: 2em;
@@ -730,7 +734,9 @@ a{
 
     .mobile-nav {
         color:black;
-        padding: 1.5em;
+        padding-top: 1.5em;
+        padding-left: 1.5em;
+        padding-right: 1.5em;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -776,9 +782,8 @@ a{
 
     }
 
-    .overlay {
+    /*.overlay {
         position: fixed;
-        height: 100%;
         width: 100%;
         top: 0;
         left: 100%;
@@ -790,9 +795,9 @@ a{
         align-items: center;
         transition: left 0.3s ease-in-out;
         z-index: 999;
-    } 
+    } */
 
-    /*.overlay {
+    .overlay {
         position: fixed;
         height: 100%;
         width: 100%;
@@ -804,9 +809,9 @@ a{
         justify-content: start;
         padding: 0 1.5em;
         align-items: center;
-        transition: top 0.8s ease-in-out; 
+        transition: top 0.5s ease-in-out; 
         z-index: 999;
-    } */
+    } 
 
     .nav-content {
         display: flex;
@@ -861,15 +866,13 @@ a{
         font-family: 'Open Sans', sans-serif;
     }
 
+    .credits,
     .copy-rights{
-        position: absolute;
-        bottom: 4em;
-        font-size: 12px;
-        left: 2em;
-        font-family: "Open Sans", sans-serif;
+        display: none;
     }
-    
-    .credits{
+
+    .credits-mobile{
+        display: block;
         position: absolute;
         bottom: 2em;
         font-size: 12px;
@@ -885,15 +888,15 @@ a{
         gap: 0.1em;
     }
 
-    .overlay.active {
+    /*.overlay.active {
         left: 0;
         color: black;
-    }
+    }*/
 
-    /*.overlay.active {
+    .overlay.active {
         top: 0; 
         color: black;
-    }*/
+    }
 
     .footer{
         display: none;
@@ -1084,6 +1087,26 @@ a{
 
 }
 
+
+
+/*.copy-rights{
+    position: absolute;
+    bottom: 3.7em;
+    font-size: 12px;
+    left: 2em;
+    font-family: "Open Sans", sans-serif;
+    display: none;
+}
+
+.credits{
+    display: none;
+    position: absolute;
+    bottom: 2em;
+    font-size: 12px;
+    left: 2em;
+    font-family: "Open Sans", sans-serif;
+    font-style: italic;
+}*/
 
     /*.gallery-container{
         width: 100vw;
