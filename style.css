@@ -316,6 +316,8 @@ nav .nav-item p{
     top: -100%; 
     left: 0;    
     background-color: #f2f2f2;
+    /*background: #EBE7E6;*/
+    /*background: #55736D;*/
     color: black;
     display: flex;
     justify-content: start;
