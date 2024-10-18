@@ -65,8 +65,8 @@ nav .nav-item p{
 }
 
 #img01 {
-    width: 600px;
-    height: 800px;
+    width: 50vw;
+    height: 60vw;
 }
 
 #img02 {
@@ -104,9 +104,10 @@ nav .nav-item p{
     padding-bottom: 4em;
     font-size: 14px;
     font-weight: 600;
+    font-family: "Tinos", serif;
 }
 
-.studio,
+
 .email,
 .links,
 .location{
@@ -134,7 +135,7 @@ nav .nav-item p{
     position: fixed;
     color:black;
     padding: 2em;
-    display: flex;
+    display: none;
     flex-direction: row;
     justify-content: end;
     width: 10vw;

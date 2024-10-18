@@ -110,15 +110,24 @@ nav .nav-item p{
     padding-bottom: 4em;
     font-size: 14px;
     font-weight: 600;
+    font-family: "Tinos", serif;
 }
 
-.studio,
+/*.studio,
+.email,
+.links,
+.location{
+    display: flex;
+    flex-direction: column;
+} */
+
 .email,
 .links,
 .location{
     display: flex;
     flex-direction: column;
 }
+
 
 .links{
     margin-top: 2em;
@@ -139,7 +148,7 @@ nav .nav-item p{
     position: fixed;
     color:black;
     padding: 2em;
-    display: flex;
+    display: none;
     flex-direction: row;
     justify-content: end;
     width: 10vw;

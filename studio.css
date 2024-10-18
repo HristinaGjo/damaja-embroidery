@@ -71,7 +71,6 @@ nav .nav-item p{
     line-height: 150%;
 }
 
-
 .clients-ctn {
     font-size: 20px;
     line-height: 110%;
@@ -79,8 +78,14 @@ nav .nav-item p{
     font-style: italic;
 }
 
-.contact-text{
+.clients-title{
+    font-weight: 400;
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+}
 
+
+.contact-text{
     grid-row: 2;
     display: none;
     flex-direction: column;
@@ -110,11 +115,13 @@ a{
 
 .img{
     position: absolute;
-    top: 10vw;
+    top: 0vw;
     /*top: 4em;*/
     right: 2em;
-    width: 300px;
-    height: 400px;
+    /*width: 300px;
+    height: 400px;*/
+    width: 22vw;
+    height:auto;
 }
 
 .img img{
