@@ -100,10 +100,6 @@ nav .nav-item p{
     height: calc(45.67vw * 1.33);
 }
 
-img.loaded {
-    opacity: 1;
-}
-
 .img img{
     width: 100%;
     height: auto;
@@ -308,6 +304,23 @@ img.loaded {
     top: 0; 
     color: black;
 }
+
+.lenis.lenis-smooth{
+    scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent]{
+    overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped{
+    overflow: hidden;
+}
+
+.lenis.lenis.lenis-smooth iframe{
+    pointer-events: none;
+}
+
 
 
 @media (max-width:768px) {
