@@ -8,6 +8,9 @@
 </head>
 <body>
 
+    <!-- Scroll Percentage Display -->
+    <div id="scroll-percentage">0%</div>
+
     <nav>
         <div class="nav-item">
             <a href="https://hristinagjo.github.io/damaja-embroidery/"><p>damaja</p></a>
@@ -19,31 +22,34 @@
 
     <div class="gallery-container">
         <div class="first-row">
-            <img class="img" id="img01" src="./assets/wa01-cover.webp" alt="">
+            <img class="img" id="img01" src="./assets/wa01-cover.webp" alt="" loading="lazy">
         </div>
         <div class="second-row">
       
-            <img class="img" id="img02" src="./images/wa-01-2.webp" alt="">
+            <img class="img" id="img02" src="./images/wa-01-2.webp" alt="" loading="lazy">
         </div>
         <div class="third-row">
-            <img class="img" id="img03" src="./images/wa-01-3.webp" alt="">
+            <img class="img" id="img03" src="./images/wa-01-3.webp" alt="" loading="lazy">
         </div>
-    </div>
-    
-
-    <div class="footer">
+        <div class="footer">
             <div class="studio">
                 <span>Wall Art</span>
                 <span>Vol.01</span>
             </div>
             <div class="location">
-                <span>Various</span>
-                <span>Clients</span>
+                <span>Various Clients</span>
+                <span>Berlin</span>
             </div>
             <div class="contact">
                 <div class="email">
-                    <span>contact:</span>
-                    <a>damaja@studio.com</a>
+                    <div class="general-contact">
+                        <span>contact</span>
+                        <a href="mailto:info@damaja-studio.com">info@damaja-studio.com</a>
+                    </div>
+                    <div class="workshops-contact">
+                        <span>workshops inquiry</span>
+                        <a href="mailto:workshops@damaja-studio.com">workshops@damaja-studio.com</a>
+                    </div>
                 </div>
                 <div class="links">
                     <a href="https://www.damaja-studio.com/" target="_blank">webshop</a>
@@ -53,7 +59,7 @@
             </div>
         </div>
     </div>
-
+    
     <div class="mobile-nav">
         <div class="logo" id="logo">
             <a href="https://hristinagjo.github.io/damaja-embroidery/">damaja</a>
@@ -106,16 +112,23 @@
     <div class="footer-mobile">
         <div class="left-ctn">
             <div class="studio">
-                <span>Wall Art Vol.01</span>
+                <span>Damaja Studio</span>
+                <span>Berlin, DE</span>
             </div>
             <div class="location">
-                <span>Various Clients</span>
+                <span>&copy; 2024</span>
             </div>
         </div>
         <div class="contact">
             <div class="email">
-                <span>contact:</span>
-                <a>damaja@studio.com</a>
+                <div class="general-contact">
+                    <span>contact</span>
+                    <a href="mailto:info@damaja-studio.com">info@damaja-studio.com</a>
+                </div>
+                <div class="workshops-contact">
+                    <span>workshops inquiry</span>
+                    <a href="mailto:workshops@damaja-studio.com">workshops@damaja-studio.com</a>
+                </div>
             </div>
             <div class="links">
                 <a href="https://www.damaja-studio.com/" target="_blank">webshop</a>
@@ -124,9 +137,9 @@
             </div>
         </div>
     </div>
-</div>
 
 <script src="menu.js"></script>
+<script src="percantage-scroll.js"></script>
 
 </body>
 </html>

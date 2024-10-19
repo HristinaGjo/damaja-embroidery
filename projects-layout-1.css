@@ -17,6 +17,17 @@ a{
     color: black;
 }
 
+#scroll-percentage {
+    position: fixed;
+    bottom: 13em;
+    right: 4em;
+    font-size: 14px;
+    font-family: "Tinos", serif;
+    font-weight: 600;
+    color: #000;
+    z-index: 1000;
+}
+
 nav{
     position: fixed;
     top: 0;
@@ -42,7 +53,7 @@ nav .nav-item p{
 .gallery-container{
     display: flex;
     flex-direction: column;
-    padding:10em 2em 10em 2em;
+    padding:10em 2em 4em 2em;
     gap: 4em;
 }
 
@@ -65,51 +76,62 @@ nav .nav-item p{
 }
 
 #img01 {
-    width: 600px;
-    height: 800px;
+    width: 36.25vw;
+    height: calc(36.25vw * 1.33);
 }
 
 #img02 {
-    width: 400px;
-    height: 600px;
+    width: 25.83vw;
+    height: calc(25.83vw * 1.33);
 }
 
 #img03 {
-    width: 800px;
-    height: 1000px;
+    width: 46.67vw;
+    height: calc(46.67vw * 1.33);
 }
 
 #img04 {
-    width: 300px;
-    height: 400px;
+    width: 20.63vw;
+    height: calc(20.63vw * 1.33);
 }
 
 #img05 {
-    width: 800px;
-    height: 1100px;
+    width: 45.67vw;
+    height: calc(45.67vw * 1.33);
 }
 
 
 .img img{
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 
 .footer{
     display: grid;
     grid-template-columns: repeat(3,1fr);
+    padding-top: 4em;
     width: 60vw;
-    position: absolute;
-    left: 2em;
-    padding-bottom: 4em;
     font-size: 14px;
     font-weight: 600;
+    font-family: "Tinos", serif;
 }
 
-.studio,
-.email,
+
 .links,
-.location{
+.location,
+.studio{
+    display: flex;
+    flex-direction: column;
+}
+
+.email{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.general-contact,
+.workshops-contact{
     display: flex;
     flex-direction: column;
 }
@@ -134,7 +156,7 @@ nav .nav-item p{
     position: fixed;
     color:black;
     padding: 2em;
-    display: flex;
+    display: none;
     flex-direction: row;
     justify-content: end;
     width: 10vw;
@@ -292,6 +314,10 @@ nav .nav-item p{
     nav {
         display: none;
     }
+    
+    #scroll-percentage{
+        display: none;
+    }
 
     .footer{
         display: none;
@@ -346,17 +372,18 @@ nav .nav-item p{
         width: 100%;
         padding-left: 1.5em;
         padding-right: 1.5em;
-        position: absolute;
+        position: relative;
         padding-bottom: 4em;
         font-size: 14px;
         font-weight: 600;
+        font-family: "Tinos", serif;
     }
 
     .left-ctn{
         grid-column: 1;
         display: flex;
         flex-direction: column;
-        gap: 2em;
+        gap: 1em;
     }
 
     .contact{
@@ -366,8 +393,38 @@ nav .nav-item p{
         gap: 2em;
     }
     
-    .links{
+    .links,
+    .location,
+    .studio{
         margin-top: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .email{
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .links{
+        font-weight: 400;
+    }
+    
+    .general-contact,
+    .workshops-contact{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .general-contact a,
+    .workshops-contact a{
+       font-weight: 400;
+    }
+
+    .general-contact span,
+    .workshops-contact span{
+        font-weight: 600;
     }
 
     .mobile-nav {

@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="projects-layout-2.css">
 </head>
 <body>
+    
+    <!-- Scroll Percentage Display -->
+    <div id="scroll-percentage">0%</div>
 
     <nav>
         <div class="nav-item">
@@ -19,34 +22,38 @@
 
     <div class="gallery-container">
         <div class="first-row">
-            <img class="img" id="img01" src="./images/flora01.webp" alt="">
-            <img class="img" id="img02" src="./images/flora02.webp" alt="">
+            <img class="img" id="img01" src="./images/flora01.webp" alt="" loading="lazy">
+            <img class="img" id="img02" src="./images/flora02.webp" alt="" loading="lazy">
         </div>
         <div class="second-row">
-            <img class="img" id="img03" src="./images/flora03.webp" alt="">
+            <img class="img" id="img03" src="./images/flora03.webp" alt="" loading="lazy">
         </div>
         <div class="third-row">
-            <img class="img" id="img04" src="./images/flora04.webp" alt="">
-            <img class="img" id="img05" src="./images/flora05.webp" alt="">
+            <img class="img" id="img04" src="./images/flora04.webp" alt="" loading="lazy">
+            <img class="img" id="img05" src="./images/flora05.webp" alt="" loading="lazy">
         </div>
         <div class="fourth-row">
-            <img class="img" id="img06" src="./images/flora06.webp" alt="">
+            <img class="img" id="img06" src="./images/flora06.webp" alt="" loading="lazy">
         </div>
-    </div>
-    
-    <div class="footer">
+        <div class="footer">
             <div class="studio">
                 <span>Flora &</span>
                 <span>Fauna</span>
             </div>
             <div class="location">
-                <span>Private client</span>
-                <span>Private residence, Berlin</span>
+                <span>Private Client</span>
+                <span>P.Berg, Berlin</span>
             </div>
             <div class="contact">
                 <div class="email">
-                    <span>contact:</span>
-                    <a>damaja@studio.com</a>
+                    <div class="general-contact">
+                        <span>contact</span>
+                        <a href="mailto:info@damaja-studio.com">info@damaja-studio.com</a>
+                    </div>
+                    <div class="workshops-contact">
+                        <span>workshops inquiry</span>
+                        <a href="mailto:workshops@damaja-studio.com">workshops@damaja-studio.com</a>
+                    </div>
                 </div>
                 <div class="links">
                     <a href="https://www.damaja-studio.com/" target="_blank">webshop</a>
@@ -55,7 +62,7 @@
                 </div>
             </div>
         </div>
-    </div>xw
+    </div>
     
     <div class="mobile-nav">
         <div class="logo" id="logo">
@@ -109,17 +116,23 @@
     <div class="footer-mobile">
         <div class="left-ctn">
             <div class="studio">
-                <span>Flora & Fauna</span>
+                <span>Damaja Studio</span>
+                <span>Berlin, DE</span>
             </div>
             <div class="location">
-                <span>Private client</span>
-                <span>Private residence, Berlin</span>
+                <span>&copy; 2024</span>
             </div>
         </div>
         <div class="contact">
             <div class="email">
-                <span>contact:</span>
-                <a>damaja@studio.com</a>
+                <div class="general-contact">
+                    <span>contact</span>
+                    <a href="mailto:info@damaja-studio.com">info@damaja-studio.com</a>
+                </div>
+                <div class="workshops-contact">
+                    <span>workshops inquiry</span>
+                    <a href="mailto:workshops@damaja-studio.com">workshops@damaja-studio.com</a>
+                </div>
             </div>
             <div class="links">
                 <a href="https://www.damaja-studio.com/" target="_blank">webshop</a>
@@ -128,9 +141,9 @@
             </div>
         </div>
     </div>
-</div>
 
 <script src="menu.js"></script>
+<script src="percantage-scroll.js"></script>
 
 </body>
 </html>

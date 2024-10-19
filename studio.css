@@ -51,11 +51,11 @@ nav .nav-item p{
 .about-clients-ctn{
     position: absolute;
     padding-left: 2em;
-    top: 7em;
+    top: 10vw;
     display: grid;
     grid-template-columns: repeat(2,1fr); 
-    gap: 2em;
-    width: 100%;
+    gap: 1em;
+    width: 100vw;
 }
 
 .gallery-text{
@@ -71,16 +71,29 @@ nav .nav-item p{
     line-height: 150%;
 }
 
+.clients-ctn {
+    font-size: 20px;
+    line-height: 110%;
+    font-family: "Tinos", serif;
+    font-style: italic;
+}
+
+.clients-title{
+    font-weight: 400;
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+}
+
 
 .contact-text{
     grid-row: 2;
-    display: flex;
+    display: none;
     flex-direction: column;
     gap: 2em;
     font-size: 14px;
     font-weight: 400;
-    /*font-family: "Open Sans", sans-serif;*/
-    font-family: "Tinos", serif;
+    font-family: "Open Sans", sans-serif;
+   /* font-family: "Tinos", serif;*/
  
     /*position: relative;*/
     /*right: 11em;*/
@@ -102,11 +115,13 @@ a{
 
 .img{
     position: absolute;
-    top: 0em;
+    top: 0vw;
     /*top: 4em;*/
     right: 2em;
-    width: 300px;
-    height: 400px;
+    /*width: 300px;
+    height: 400px;*/
+    width: 22vw;
+    height:calc(22vw * 1.37);
 }
 
 .img img{
@@ -114,12 +129,10 @@ a{
     height: 100%;
 }
 
-
 .mobile-content,
 .footer-mobile{
     display: none;
 }
-
 
 /* Menu Desktop & Mobile */
 .mobile-nav {
@@ -130,11 +143,10 @@ a{
     flex-direction: row;
     justify-content: end;
     width: 10vw;
-    right: 0.5em;
+    right: 0.3em;
     top: 0;
     z-index: 1000;
 }
-
 
 #menuText{
     color: transparent;
@@ -166,7 +178,6 @@ a{
 
 .menu-toggle a{
     color: black;
-
 }
 
 .overlay {
@@ -179,21 +190,25 @@ a{
     color: black;
     display: flex;
     justify-content: start;
-    padding: 0 1.5em;
+    padding: 0 2em;
     align-items: center;
     transition: top 0.5s ease-in-out; 
     z-index: 999;
-} 
+}
 
 .nav-content {
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: start;
-    gap: 6em;
+    gap: 8em;
     text-align: left;
     height: 100%;
-    padding-top: 2em;
+    padding-top: 0em;
+}
+
+.nav-content span{
+    font-size: 14px;
 }
 
 .logo-desktop{
@@ -201,20 +216,28 @@ a{
     font-family: "Tinos", serif;
     font-size: 12px;
     font-weight: 600;
+    visibility: hidden;
 }
 
-.main-links,
+
 .secondary-links {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    gap: 2em;
+}
+
+.main-links {
     display: flex;
     flex-direction: column;
     list-style: none;
     padding: 0;
 }
 
+
 .main-links a {
     font-size: 2.5em;
-    text-decoration: none;
-    color: black;
     margin: 0;
     font-family: "Tinos", serif;
     line-height: 1.2;
@@ -227,8 +250,7 @@ a{
 }
 
 .secondary-links a {
-    font-size: 16px;
-    color: black;
+    font-size: 14px;
     font-weight: 200;
     opacity: 0.5;
     text-transform: lowercase;
@@ -236,12 +258,52 @@ a{
 }
 
 .secondary-links p {
-    font-size: 16px;
-    color: black;
+    font-size: 14px;
     font-weight: 200;
     opacity: 0.5;
     margin-top: 0.2em;
     font-family: 'Open Sans', sans-serif;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.general-contact,
+.workshops-contact{
+    display: flex;
+    flex-direction: column;
+}
+
+.links-ctn{
+    gap: 0.5em;
+    display: flex;
+    flex-direction: column;
+}
+
+.links-webshop{
+    display: flex;
+    flex-direction: column;
+}
+
+.links-title span{
+    opacity: 1;
+}
+
+.social-links-ctn{
+    display: flex;
+    flex-direction: column;
+}
+
+.social-links-list{
+    display: flex;
+    flex-direction: column;
+}
+
+.credits-mobile{
+    display: none;
 }
 
 .copy-rights{
@@ -261,22 +323,10 @@ a{
     font-style: italic;
 }
 
-.links-menu{
-    padding-top: 1.5em;
-    display: flex;
-    flex-direction: column;
-    gap: 0.1em;
-}
-
 .overlay.active {
     top: 0; 
     color: black;
 }
-
-/*.overlay.active {
-    left: 0;
-    color: black;
-} */
 
 @media (max-width:768px) {
 
@@ -313,6 +363,7 @@ a{
         grid-column: 1;
         font-family: "Tinos", serif;
         line-height: 120%;
+        font-style: italic;
     }
 
     .img-mobile{
@@ -349,18 +400,18 @@ a{
         width: 100%;
         padding-left: 1.5em;
         padding-right: 1.5em;
-        /*position: absolute;*/
         position: relative;
         padding-bottom: 4em;
         font-size: 14px;
         font-weight: 600;
+        font-family: "Tinos", serif;
     }
 
     .left-ctn{
         grid-column: 1;
         display: flex;
         flex-direction: column;
-        gap: 2em;
+        gap: 1em;
     }
 
     .contact{
@@ -372,11 +423,36 @@ a{
     
     .links,
     .location,
-    .studio,
-    .email{
+    .studio{
         margin-top: 0;
         display: flex;
         flex-direction: column;
+    }
+
+    .email{
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .links{
+        font-weight: 400;
+    }
+    
+    .general-contact,
+    .workshops-contact{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .general-contact a,
+    .workshops-contact a{
+       font-weight: 400;
+    }
+
+    .general-contact span,
+    .workshops-contact span{
+        font-weight: 600;
     }
 
     .mobile-nav {
@@ -510,13 +586,14 @@ a{
         padding-top: 1.5em;
         display: flex;
         flex-direction: column;
-        gap: 0.1em;
+        gap: 0.1em
     }
 
     .overlay.active {
         top: 0; 
         color: black;
     }
+
 
 }
 

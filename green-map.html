@@ -8,6 +8,9 @@
 </head>
 <body>
 
+    <!-- Scroll Percentage Display -->
+    <div id="scroll-percentage">0%</div>
+
     <nav>
         <div class="nav-item">
             <a href="https://hristinagjo.github.io/damaja-embroidery/"><p>damaja</p></a>
@@ -19,32 +22,37 @@
 
     <div class="gallery-container">
         <div class="first-row">
-            <img class="img" id="img01" src="./images/adidas01.webp" alt="">
-            <img class="img" id="img02" src="./images/adidas02.webp" alt="">
+            <img class="img" id="img01" src="./images/adidas01.webp" alt="" loading="lazy">
+            <img class="img" id="img02" src="./images/adidas02.webp" alt="" loading="lazy">
         </div>
         <div class="second-row">
       
-            <img class="img" id="img03" src="./images/adidas03.webp" alt="">
+            <img class="img" id="img03" src="./images/adidas03.webp" alt="" loading="lazy">
         </div>
         <div class="third-row">
-            <img class="img" id="img04" src="./images/adidas04.webp" alt="">
-            <img class="img" id="img05" src="./images/adidas05.webp" alt="">
+            <img class="img" id="img04" src="./images/adidas04.webp" alt="" loading="lazy">
+            <img class="img" id="img05" src="./images/adidas05.webp" alt="" loading="lazy">
         </div>
-    </div>
-    
-    <div class="footer">
+
+        <div class="footer">
             <div class="studio">
                 <span>Berlin</span>
                 <span>green map</span>
             </div>
             <div class="location">
-                <span>Adidas</span>
-                <span>Flagship store, Berlin</span>
+                <span>Adidas Flagship Store</span>
+                <span>Berlin</span>
             </div>
             <div class="contact">
                 <div class="email">
-                    <span>contact:</span>
-                    <a>damaja@studio.com</a>
+                    <div class="general-contact">
+                        <span>contact</span>
+                        <a href="mailto:info@damaja-studio.com">info@damaja-studio.com</a>
+                    </div>
+                    <div class="workshops-contact">
+                        <span>workshops inquiry</span>
+                        <a href="mailto:workshops@damaja-studio.com">workshops@damaja-studio.com</a>
+                    </div>
                 </div>
                 <div class="links">
                     <a href="https://www.damaja-studio.com/" target="_blank">webshop</a>
@@ -53,6 +61,8 @@
                 </div>
             </div>
         </div>
+    </div>
+    
 
         <div class="mobile-nav">
             <div class="logo" id="logo">
@@ -103,21 +113,26 @@
             </div>
         </div>
 
-        
         <div class="footer-mobile">
             <div class="left-ctn">
                 <div class="studio">
-                    <span>Berlin green map</span>
+                    <span>Damaja Studio</span>
+                    <span>Berlin, DE</span>
                 </div>
                 <div class="location">
-                    <span>Adidas</span>
-                    <span>Flagship store, Berlin</span>
+                    <span>&copy; 2024</span>
                 </div>
             </div>
             <div class="contact">
                 <div class="email">
-                    <span>contact:</span>
-                    <a>damaja@studio.com</a>
+                    <div class="general-contact">
+                        <span>contact</span>
+                        <a href="mailto:info@damaja-studio.com">info@damaja-studio.com</a>
+                    </div>
+                    <div class="workshops-contact">
+                        <span>workshops inquiry</span>
+                        <a href="mailto:workshops@damaja-studio.com">workshops@damaja-studio.com</a>
+                    </div>
                 </div>
                 <div class="links">
                     <a href="https://www.damaja-studio.com/" target="_blank">webshop</a>
@@ -126,9 +141,9 @@
                 </div>
             </div>
         </div>
-    </div>
 
     <script src="menu.js"></script>
-    
+    <script src="percantage-scroll.js"></script>
+
 </body>
 </html>
