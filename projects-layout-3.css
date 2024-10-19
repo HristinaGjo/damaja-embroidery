@@ -148,14 +148,11 @@ nav .nav-item p{
     position: fixed;
     color:black;
     padding: 2em;
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
+    display: none;
     width: 10vw;
     right: 0.5em;
     top: 0;
     z-index: 1000;
-    visibility: hidden;
 }
 
 

@@ -157,13 +157,10 @@ nav .nav-item p{
     color:black;
     padding: 2em;
     display: none;
-    flex-direction: row;
-    justify-content: end;
     width: 10vw;
     right: 0.5em;
     top: 0;
     z-index: 1000;
-    visibility: hidden;
 }
 
 
