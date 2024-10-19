@@ -314,6 +314,10 @@ nav .nav-item p{
     nav {
         display: none;
     }
+    
+    #scroll-percentage{
+        display: none;
+    }
 
     .footer{
         display: none;
@@ -368,17 +372,18 @@ nav .nav-item p{
         width: 100%;
         padding-left: 1.5em;
         padding-right: 1.5em;
-        position: absolute;
+        position: relative;
         padding-bottom: 4em;
         font-size: 14px;
         font-weight: 600;
+        font-family: "Tinos", serif;
     }
 
     .left-ctn{
         grid-column: 1;
         display: flex;
         flex-direction: column;
-        gap: 2em;
+        gap: 1em;
     }
 
     .contact{
@@ -388,8 +393,38 @@ nav .nav-item p{
         gap: 2em;
     }
     
-    .links{
+    .links,
+    .location,
+    .studio{
         margin-top: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .email{
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .links{
+        font-weight: 400;
+    }
+    
+    .general-contact,
+    .workshops-contact{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .general-contact a,
+    .workshops-contact a{
+       font-weight: 400;
+    }
+
+    .general-contact span,
+    .workshops-contact span{
+        font-weight: 600;
     }
 
     .mobile-nav {
