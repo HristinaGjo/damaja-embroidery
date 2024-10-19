@@ -39,10 +39,22 @@ nav .nav-item p{
     font-family: "Tinos", serif;
 }
 
+#scroll-percentage {
+    position: fixed;
+    bottom: 13em;
+    right: 4em;
+    font-size: 14px;
+    font-family: "Tinos", serif;
+    font-weight: 600;
+    color: #000;
+    z-index: 1000;
+}
+
+
 .gallery-container{
     display: flex;
     flex-direction: column;
-    padding:10em 2em 6em 2em;
+    padding:10em 2em 4em 2em;
     gap: 4em;
 }
 

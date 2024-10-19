@@ -333,6 +333,7 @@ a{
         grid-column: 1;
         font-family: "Tinos", serif;
         line-height: 120%;
+        font-style: italic;
     }
 
     .img-mobile{
@@ -374,6 +375,7 @@ a{
         padding-bottom: 4em;
         font-size: 14px;
         font-weight: 600;
+        font-family: "Tinos", serif;
     }
 
     .left-ctn{
@@ -392,9 +394,20 @@ a{
     
     .links,
     .location,
-    .studio,
-    .email{
+    .studio{
         margin-top: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .email{
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+    
+    .general-contact,
+    .workshops-contact{
         display: flex;
         flex-direction: column;
     }
@@ -530,7 +543,7 @@ a{
         padding-top: 1.5em;
         display: flex;
         flex-direction: column;
-        gap: 0.1em;
+        gap: 0.1em
     }
 
     .overlay.active {
