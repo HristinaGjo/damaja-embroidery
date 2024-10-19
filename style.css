@@ -275,7 +275,6 @@ nav .nav-item p{
     z-index: 1000;
 }
 
-
 #menuText{
     color: transparent;
 }
@@ -306,7 +305,6 @@ nav .nav-item p{
 
 .menu-toggle a{
     color: black;
-
 }
 
 .overlay {
@@ -316,8 +314,6 @@ nav .nav-item p{
     top: -100%; 
     left: 0;    
     background-color: #f2f2f2;
-    /*background: #EBE7E6;*/
-    /*background: #55736D;*/
     color: black;
     display: flex;
     justify-content: start;
@@ -325,17 +321,21 @@ nav .nav-item p{
     align-items: center;
     transition: top 0.5s ease-in-out; 
     z-index: 999;
-} 
+}
 
 .nav-content {
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: start;
-    gap: 6em;
+    gap: 8em;
     text-align: left;
     height: 100%;
     padding-top: 2em;
+}
+
+.nav-content span{
+    font-size: 14px;
 }
 
 .logo-desktop{
@@ -343,20 +343,28 @@ nav .nav-item p{
     font-family: "Tinos", serif;
     font-size: 12px;
     font-weight: 600;
+    visibility: hidden;
 }
 
-.main-links,
+
 .secondary-links {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    gap: 2em;
+}
+
+.main-links {
     display: flex;
     flex-direction: column;
     list-style: none;
     padding: 0;
 }
 
+
 .main-links a {
     font-size: 2.5em;
-    text-decoration: none;
-    color: black;
     margin: 0;
     font-family: "Tinos", serif;
     line-height: 1.2;
@@ -368,10 +376,8 @@ nav .nav-item p{
     opacity: 0.5;
 }
 
-
 .secondary-links a {
-    font-size: 16px;
-    color: black;
+    font-size: 14px;
     font-weight: 200;
     opacity: 0.5;
     text-transform: lowercase;
@@ -379,19 +385,48 @@ nav .nav-item p{
 }
 
 .secondary-links p {
-    font-size: 16px;
-    color: black;
+    font-size: 14px;
     font-weight: 200;
     opacity: 0.5;
     margin-top: 0.2em;
     font-family: 'Open Sans', sans-serif;
 }
 
-.links-menu{
-    padding-top: 1.5em;
+.contact{
     display: flex;
     flex-direction: column;
-    gap: 0.1em;
+    gap: 0.5em;
+}
+
+.general-contact,
+.workshops-contact{
+    display: flex;
+    flex-direction: column;
+}
+
+.links-ctn{
+    gap: 0.5em;
+    display: flex;
+    flex-direction: column;
+}
+
+.links-webshop{
+    display: flex;
+    flex-direction: column;
+}
+
+.links-title span{
+    opacity: 1;
+}
+
+.social-links-ctn{
+    display: flex;
+    flex-direction: column;
+}
+
+.social-links-list{
+    display: flex;
+    flex-direction: column;
 }
 
 .credits-mobile{
