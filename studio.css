@@ -121,7 +121,7 @@ a{
     /*width: 300px;
     height: 400px;*/
     width: 22vw;
-    height:auto;
+    height:calc(22vw * 1.37);
 }
 
 .img img{

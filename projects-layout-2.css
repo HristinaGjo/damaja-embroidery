@@ -42,7 +42,7 @@ nav .nav-item p{
 .gallery-container{
     display: flex;
     flex-direction: column;
-    padding:10em 2em 10em 2em;
+    padding:10em 2em 6em 2em;
     gap: 4em;
 }
 
@@ -66,33 +66,33 @@ nav .nav-item p{
 
 
 #img01 {
-    width: 600px;
-    height: 800px;
+    width: 31.25vw;
+    height: calc(31.25vw * 1.33);
 }
 
 #img02 {
-    width: 450px;
-    height: 600px;
+    width: 23.44vw;
+    height: calc(23.44vw * 1.33);
 }
 
 #img03 {
-    width: 1200px;
-    height: 500px;
+    width: 62.5vw;
+    height: calc(62.5vw * 9 / 16); /* Adjusted for 16:9 ratio */
 }
 
 #img04 {
-    width: 300px;
-    height: 400px;
+    width: 15.63vw;
+    height: calc(15.63vw * 1.33);
 }
 
 #img05 {
-    width: 870px;
-    height: 600px;
+    width: 45.31vw;
+    height: calc(45.31vw * 1);
 }
 
 #img06 {
-    width: 1200px;
-    height: 800px;
+    width: 62.5vw;
+    height: calc(62.5vw * 9 / 16); /* Adjusted for 16:9 ratio */
 }
 
 
@@ -104,30 +104,32 @@ nav .nav-item p{
 .footer{
     display: grid;
     grid-template-columns: repeat(3,1fr);
+    padding-top: 4em;
     width: 60vw;
-    position: absolute;
-    left: 2em;
-    padding-bottom: 4em;
     font-size: 14px;
     font-weight: 600;
     font-family: "Tinos", serif;
 }
 
-/*.studio,
-.email,
-.links,
-.location{
-    display: flex;
-    flex-direction: column;
-} */
 
-.email,
 .links,
-.location{
+.location,
+.studio{
     display: flex;
     flex-direction: column;
 }
 
+.email{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.general-contact,
+.workshops-contact{
+    display: flex;
+    flex-direction: column;
+}
 
 .links{
     margin-top: 2em;
