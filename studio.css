@@ -129,12 +129,10 @@ a{
     height: 100%;
 }
 
-
 .mobile-content,
 .footer-mobile{
     display: none;
 }
-
 
 /* Menu Desktop & Mobile */
 .mobile-nav {
