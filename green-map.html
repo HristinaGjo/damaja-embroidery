@@ -149,6 +149,20 @@
             </div>
         </div>
 
+
+    <script>
+        document.querySelectorAll('img').forEach(img => {
+        // Check if image is already loaded
+            if (img.complete) {
+                img.classList.add('loaded');
+            } else {
+            img.addEventListener('load', () => {
+                img.classList.add('loaded');
+            });
+        }
+    });
+    </script>
+
     <script src="menu.js"></script>
     <script src="https://unpkg.com/lenis@1.1.9/dist/lenis.min.js"></script>
     <script src="percantage-scroll.js"></script>
