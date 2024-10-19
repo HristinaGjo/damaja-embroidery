@@ -154,6 +154,7 @@ nav .nav-item p{
     right: 0.5em;
     top: 0;
     z-index: 1000;
+    visibility: hidden;
 }
 
 
